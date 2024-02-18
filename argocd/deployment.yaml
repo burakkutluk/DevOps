@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: merhaba-dunya
+  name: myapp
+  labels:
+    app: myapp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: rest-api
+      app: myapp
   template:
     metadata:
       labels:
-        app: rest-api
+        app: myapp
     spec:
       containers:
-      - name: rest-api-node
-        image: node-rest-api
+      - name: myapp
+        image: burakkutluk/rest-api:v1.0
         ports:
-        - containerPort: 3000
+        - containerPort: 8080
