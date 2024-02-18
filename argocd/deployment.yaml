@@ -15,7 +15,7 @@ spec:
         app: rest-api
     spec:
       containers:
-      - name: myapp
+      - name: rest-api
         image: burakkutluk/rest-api
         ports:
         - containerPort: 8080
