@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: node-rest-api
+        image: burakkutluk/rest-api
         ports:
         - containerPort: 8080
