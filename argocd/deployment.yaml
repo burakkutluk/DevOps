@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: rest-api-node
-        image: burakkutluk/rest-api
+        image: node-rest-api
         ports:
         - containerPort: 3000
