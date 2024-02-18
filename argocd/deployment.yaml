@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: rest-api
   labels:
-    app: myapp
+    app: rest-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: rest-api
   template:
     metadata:
       labels:
-        app: myapp
+        app: rest-api
     spec:
       containers:
       - name: myapp
